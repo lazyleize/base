@@ -8,6 +8,7 @@
 #include <base/byteorder.hpp>
 #include <cstdio>
 #include <cstring>
+#include <string.h>
 
 using namespace aps;
 
@@ -187,4 +188,5 @@ using namespace aps;
         szBuffer[40] = '\0';
         return szBuffer;
     }
+
 
