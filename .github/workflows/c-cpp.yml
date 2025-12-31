@@ -16,5 +16,6 @@ jobs:
     - name: Build in base directory
       run: |
         pwd
+        ls
         make clean 
         make all
