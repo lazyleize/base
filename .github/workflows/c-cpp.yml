@@ -15,5 +15,6 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build in base directory
       run: |
-        cd base
-        make clean && make all
+        pwd
+        make clean 
+        make all
