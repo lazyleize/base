@@ -13,5 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: make
-      run: make all
+    - name: Build in base directory
+      run: |
+        cd base
+        make clean && make all
