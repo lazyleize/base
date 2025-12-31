@@ -11,7 +11,7 @@ CLIBCOMPILE += -I. -fPIC
 
 #external paths
 # aps
-INCLUDEDIR  += -I.. -I../../
+INCLUDEDIR  += -I.. 
 LIBLINK += -L$(PRODUCT_PATH)/lib 
 
 #all source files - 分别处理 .cpp 和 .c 文件
@@ -55,6 +55,7 @@ $(BUILD_CACHE_DIR)/%.o:%.c
 
 clean:
 	-rm -rf $(BUILD_CACHE_DIR)
+
 
 
 
