@@ -1,4 +1,4 @@
-include ../Makefile.conf
+include Makefile.conf
 ARGET=libaps.base.a
 LIB_TO_BUILD = libaps.base.so
 TARGET = $(LIB_TO_BUILD) $(ARGET)
@@ -55,4 +55,5 @@ $(BUILD_CACHE_DIR)/%.o:%.c
 
 clean:
 	-rm -rf $(BUILD_CACHE_DIR)
+
 
