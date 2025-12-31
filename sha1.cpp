@@ -8,7 +8,6 @@
 #include <base/byteorder.hpp>
 #include <cstdio>
 #include <cstring>
-#include <string.h>
 
 using namespace aps;
 
@@ -114,7 +113,7 @@ using namespace aps;
 
         /* Wipe variables */
         a = b = c = d = e = 0;
-        memset_s(block32, 0x00, BLOCK_SIZE);
+        memset(block32, 0x00, BLOCK_SIZE);
     }
 
     void SHA1Digest::update(const char* data, size_t len)
@@ -188,5 +187,6 @@ using namespace aps;
         szBuffer[40] = '\0';
         return szBuffer;
     }
+
 
 
